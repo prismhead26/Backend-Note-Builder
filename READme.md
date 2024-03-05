@@ -13,7 +13,11 @@
   - [Questions](#Questions)
 
   ## Installation Instructions:
-  
+  Step 1: Clone repository
+  <br>
+  Step 2: Install Nodejs
+  <br>
+  Step 3: Install a source-code editor like VsCode
   
   ## Usage Instructions:
   Step 1:
