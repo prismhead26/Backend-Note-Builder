@@ -18,6 +18,8 @@
   Step 2: Install Nodejs
   <br>
   Step 3: Install a source-code editor like VsCode
+  <br>
+  Step 4: Nodemon is recommended in order to refresh and see updated notes data.
   
   ## Usage Instructions:
 
@@ -27,7 +29,7 @@ Step 2: Open integrated terminal once in the main main folder
 <br>
 Step 3: "run npm i" / "sudo npm i" in the terminal to install the required dependencies.
 <br>
-Step 4: Now to run the file, Enter "npm run start" or "node index.js"
+Step 4: Now to run the file, Enter "nodemon index.js" or "npm start"
 <br>
 Step 5: 
 <br>
@@ -42,7 +44,7 @@ Step 6: Once completed
   ![Create](./assets/images/Create.png)
   
   ## Features
-  Here you will find the list of all npm/node packages used: 
+  Javascript variables, destructuring, classes and constructors, promises, then/catch methods, RESTful api, etc.
 
   ## Test Instructions:
   For testing and debugging, the application logs requests and errors in the console as well as some more data from npm package Morgan.
