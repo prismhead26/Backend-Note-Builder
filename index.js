@@ -5,7 +5,7 @@ const path = require('path')
 const { readFile, writeFile } = require('fs/promises')
 const { v4 } = require('uuid');
 
-const PORT = 3002 || process.env.PORT
+const PORT = process.env.PORT || 3002
 
 const app = express()
 
