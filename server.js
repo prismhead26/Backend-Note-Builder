@@ -3,7 +3,7 @@ const morgan = require('morgan')
 const notes = require('./db/db.json')
 const path = require('path')
 const { readFile, writeFile } = require('fs/promises')
-const { uuid, jsonSchema, v4 } = require('uuid');
+const { v4 } = require('uuid');
 
 const PORT = 3002
 

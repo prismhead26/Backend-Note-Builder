@@ -1,7 +1,7 @@
 # Backend Note Builder
   
   ## Description:
-  Your assignment is to modify starter code to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.The application’s front end has already been created. It's your job to build the back end, connect the two, and then deploy the entire application to Heroku.
+  The main goal of this project is to create an application that can be used to write and save notes. The application will use an Express.js back end and will save and retrieve note data from a JSON file. The application will be deployed on Heroku. After completion of the project, I have a better understanding	 of building RESTful APIs with Node.js through the Express.js framework.  I also learned how to use API request methods along with their respective routes. And lastly I learned some better ways to refactor and format the code, making it easier to read and modify.  For instance, instead of having the then() method on the same line as the function, all then/catch methods independently have their own line.
   
   ## Table of Contents:
   - [Installation Instructions](#Installation-Instructions)
@@ -20,23 +20,28 @@
   Step 3: Install a source-code editor like VsCode
   
   ## Usage Instructions:
-  Step 1:
-  <br>
-  Step 2: 
-  <br>
-  Step 3: 
-  <br>
-  Step 4: 
-  <br>
-  Step 5:
+
+Step 1: Open in VsCode(preferred) or another source-code editor
+<br>
+Step 2: Open integrated terminal once in the main main folder
+<br>
+Step 3: "run npm i" / "sudo npm i" in the terminal to install the required dependencies.
+<br>
+Step 4: Now to run the file, Enter "npm run start" or "node index.js"
+<br>
+Step 5: 
+<br>
+Step 6: Once completed 
 
   ## Links
+  Screenshots:
+  
 
   ## Features
   Here you will find the list of all npm/node packages used: 
 
   ## Test Instructions:
-  test examples and how to
+  For testing and debugging, the application logs requests and errors in the console as well as some more data from npm package Morgan.
   
   ## License:
   
