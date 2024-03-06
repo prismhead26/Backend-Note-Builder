@@ -35,8 +35,12 @@ Step 6: Once completed
 
   ## Links
   Screenshots:
-  
+  ![Home](./assets/images/Home.png)
 
+  ![Notes](./assets/images/Notes.png)
+
+  ![Create](./assets/images/Create.png)
+  
   ## Features
   Here you will find the list of all npm/node packages used: 
 
