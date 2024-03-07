@@ -21,10 +21,12 @@ app.get('/notes', (req, res) => {
 })
 
 app.get('/api/notes', (req, res) => {
-    // Send a message to the client
-    res.status(200).json(notes);
     // Log our request to the terminal
     console.info(`${req.method} request received to get notes`);
+    // Send a message to the client   readfile
+    readFile('./db/db.json').then((raw_data) => {
+        res.json(JSON.parse(raw_data))
+    })
 })
 
 app.post('/api/notes', (req, res) => {
@@ -46,18 +48,16 @@ app.post('/api/notes', (req, res) => {
             const notes = (data);
             notes.push(newNote);
             writeFile('./db/db.json', JSON.stringify(notes))
+            res.status(201).json(notes)
         })
         .then(() => console.log('Success!'))
-        .then(() => location.reload(true))
         .catch(err => console.error(err));
 
-        const response = {
-            status: 'success',
-            body: newNote
-        }
-
-        console.log(response)
-        res.status(201).send(response).redirect('/api/notes')
+        // const response = {
+        //     status: 'success',
+        //     body: newNote
+        // }``
+        
         // res.status(201).json(response)
     } else {
         res.status(500).json('Error in posting note')
