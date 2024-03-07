@@ -15,11 +15,11 @@ app.use(express.urlencoded({ extended: true }))
 app.use(morgan('dev'))
 
 app.use(express.static(path.join(__dirname, 'public')))
-
+// GET request for notes page
 app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/notes.html'))
 })
-
+// GET request for all notes in json form
 app.get('/api/notes', (req, res) => {
     // Log our request to the terminal
     console.info(`${req.method} request received to get notes`);
@@ -28,12 +28,12 @@ app.get('/api/notes', (req, res) => {
         res.json(JSON.parse(raw_data))
     })
 })
-
+//  POST request
 app.post('/api/notes', (req, res) => {
     console.info(`${req.method} request received to get notes`)
 
     const { title, text } = req.body
-
+// conditional to check for proper user input
     if ( title && text ) {
         const newNote = {
             title,
@@ -56,7 +56,7 @@ app.post('/api/notes', (req, res) => {
         res.status(500).json('Error in posting note')
     }
 })
-
+// delete request
 app.delete('/api/notes/:id', (req, res) => {
 
     // before
@@ -87,7 +87,7 @@ app.delete('/api/notes/:id', (req, res) => {
 app.use((req, res) => {
     res.status(404).sendFile('./public/404.html', { root: __dirname })
 })
-
+// Listening for initial connection
 app.listen(PORT, (err) => {
     if (err) console.log(err)
     console.log(`Listening on port ${PORT}...`)
