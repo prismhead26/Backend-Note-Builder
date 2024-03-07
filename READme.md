@@ -13,27 +13,25 @@
   - [Questions](#Questions)
 
   ## Installation Instructions:
-  Step 1: Clone repository
+  Step 1: Clone repository.
   <br>
-  Step 2: Install Nodejs
+  Step 2: Install Nodejs.
   <br>
-  Step 3: Install a source-code editor like VsCode
+  Step 3: Install a source-code editor like VsCode.
   <br>
   Step 4: Nodemon is recommended in order to refresh and see updated notes data.
   
   ## Usage Instructions:
 
-Step 1: Open in VsCode(preferred) or another source-code editor
+Step 1: Open in VsCode(preferred) or another source-code editor.
 <br>
-Step 2: Open integrated terminal once in the main main folder
+Step 2: Open integrated terminal once in the main main folder.
 <br>
 Step 3: "run npm i" / "sudo npm i" in the terminal to install the required dependencies.
 <br>
-Step 4: Now to run the file, Enter "nodemon index.js" or "npm start"
+Step 4: Now to run the application, Enter "nodemon index.js" or "npm start" and "node index.js" if you don't have npm nodemon.
 <br>
-Step 5:  
-<br>
-Step 6: Once completed 
+Step 5: After the "app listening" appears in the console, open browser and go to "localhost:3002".
 
   ## Links
   Screenshots:
