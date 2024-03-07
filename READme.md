@@ -31,7 +31,7 @@ Step 3: "run npm i" / "sudo npm i" in the terminal to install the required depen
 <br>
 Step 4: Now to run the application, Enter "nodemon index.js" or "npm start" and "node index.js" if you don't have npm nodemon.
 <br>
-Step 5: After the "app listening" appears in the console, open browser and go to "localhost:3002".
+Step 5: After the "app listening" appears in the console, open the browser and go to "localhost:3002".
 
   ## Links
   Screenshots:
