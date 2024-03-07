@@ -48,6 +48,7 @@ app.post('/api/notes', (req, res) => {
             writeFile('./db/db.json', JSON.stringify(notes))
         })
         .then(() => console.log('Success!'))
+        .then(() => location.reload(true))
         .catch(err => console.error(err));
 
         const response = {
@@ -56,7 +57,7 @@ app.post('/api/notes', (req, res) => {
         }
 
         console.log(response)
-        res.status(201).send(response)
+        res.status(201).send(response).redirect('/api/notes')
         // res.status(201).json(response)
     } else {
         res.status(500).json('Error in posting note')

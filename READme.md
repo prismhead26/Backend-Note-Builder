@@ -31,7 +31,7 @@ Step 3: "run npm i" / "sudo npm i" in the terminal to install the required depen
 <br>
 Step 4: Now to run the file, Enter "nodemon index.js" or "npm start"
 <br>
-Step 5: 
+Step 5:  
 <br>
 Step 6: Once completed 
 
@@ -47,7 +47,7 @@ Step 6: Once completed
   Javascript variables, destructuring, classes and constructors, promises, then/catch methods, RESTful api, etc.
 
   ## Test Instructions:
-  For testing and debugging, the application logs requests and errors in the console as well as some more data from npm package Morgan.
+  For testing and debugging, the application logs requests and errors in the console as well as some more data from npm package Morgan. Also if you have heroku, feel free to clone GitHub repo and create Heroku app and run "heroku local" in the terminal to test and run locally.
   
   ## License:
   
